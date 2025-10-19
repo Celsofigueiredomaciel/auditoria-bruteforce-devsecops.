@@ -34,9 +34,12 @@ O serviço FTP (Porta 21) do Metasploitable é o alvo.
 | **Varredura (Nmap)** | `nmap -sV [IP do Metasploitable]` | Porta 21: open (Serviço ProFTPD) |
 | **Ataque Brute Force** | `medusa -u msfadmin -P /caminho/para/wordlist.txt -h [IP] -M ftp` | ![erro001](https://github.com/user-attachments/assets/07aa40de-ba35-46eb-b6b6-50afc43ccb2c)
 [] |
-| **Login Obtido** | Usuário: `msfadmin` / Senha: `msfadmin` (ou a senha que você descobriu) | [Comprovar o login bem-sucedido.] |
+| **Login Obtido** | Usuário: `(admin)` / Senha:  (password) | [![senha quebrada com sucesso](https://github.com/user-attachments/assets/811b419a-33b6-4423-a795-9a0e548c4601)
+] |
 
 ### 2.2. Ataque de Força Bruta em Formulário Web (DVWA)
+
+![codigo medusa site ](https://github.com/user-attachments/assets/b7ffa41e-6c62-463a-9562-00ed8e32a730)
 
 *Detalhar aqui o comando ou a metodologia para quebrar a senha do formulário web.*
 
