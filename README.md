@@ -44,6 +44,6 @@ O conhecimento obtido no ataque deve ser usado para a defesa. A vulnerabilidade 
 | :--- | :--- | :--- |
 | **FTP/Web** | Vulnerável a milhares de tentativas por minuto. | **Implementar Rate Limiting:** Bloquear o IP de origem após 5 tentativas de login em 60 segundos. |
 | **Geral** | Senhas fracas (dicionário) funcionando. | **Forçar MFA** (Autenticação de Múltiplos Fatores) em todos os usuários. |
-| **Geral** | | Adotar **Políticas de Senha Forte** (mínimo 12 caracteres, complexidade obrigatória). |
+| **Geral** | | Adotar **Políticas de Senha Forte** (mínimo 12 caracteres, complexidade obrigatória). | .
 
 ---
