@@ -1,6 +1,7 @@
 # auditoria-bruteforce-devsecops.
 Projeto prático de segurança ofensiva e defensiva focado em ataques de Força Bruta (Medusa) e mitigação de riscos.
 Este projeto demonstra a capacidade de configurar um ambiente de testes, simular ataques de Força Bruta em serviços comuns (FTP, Web) e, o mais importante, propor medidas de **DevSecOps** para mitigar esses riscos.
+![Maquinas Ligadas](https://github.com/user-attachments/assets/324a99db-0289-48e3-9cb9-cb9a6ef78da0)
 
 ---
 
@@ -13,6 +14,8 @@ A parte mais crucial da prática: a configuração do ambiente de testes.
 * **Topologia de Rede:** Configuração Host-Only/Interna no VirtualBox.
 * **Endereços IP:** Kali: [Seu IP do Kali] | Metasploitable: [IP do Metasploitable]
 * **Comprovação de Conexão:** [Inserir aqui o comando 'ping' ou 'nmap -sn' mostrando que as máquinas se comunicam.]
+![metasploitables na rede Host-Only](https://github.com/user-attachments/assets/267167b7-38c8-42c1-832b-4dd0e79c2664)
+![Kali Linux na mesma rede Host_Only](https://github.com/user-attachments/assets/1fc668d8-7b4c-4b48-95eb-65392cc6f8f8)
 
 ---
 
@@ -24,10 +27,13 @@ A ferramenta **Medusa** foi utilizada para automatizar a tentativa de senhas.
 
 O serviço FTP (Porta 21) do Metasploitable é o alvo.
 
+![IPs e Varredura (Scanning)](https://github.com/user-attachments/assets/40718837-b069-460c-9ca0-e22956886723)
+
 | Ação | Comando Medusa (Exemplo) | Evidência |
 | :--- | :--- | :--- |
 | **Varredura (Nmap)** | `nmap -sV [IP do Metasploitable]` | Porta 21: open (Serviço ProFTPD) |
-| **Ataque Brute Force** | `medusa -u msfadmin -P /caminho/para/wordlist.txt -h [IP] -M ftp` | [Inserir a captura de tela do Medusa mostrando a senha encontrada.] |
+| **Ataque Brute Force** | `medusa -u msfadmin -P /caminho/para/wordlist.txt -h [IP] -M ftp` | ![erro001](https://github.com/user-attachments/assets/07aa40de-ba35-46eb-b6b6-50afc43ccb2c)
+[] |
 | **Login Obtido** | Usuário: `msfadmin` / Senha: `msfadmin` (ou a senha que você descobriu) | [Comprovar o login bem-sucedido.] |
 
 ### 2.2. Ataque de Força Bruta em Formulário Web (DVWA)
