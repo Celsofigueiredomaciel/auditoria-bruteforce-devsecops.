@@ -1,4 +1,6 @@
 # auditoria-bruteforce-devsecops.
+<img width="1600" height="896" alt="Capa trabalho da DIO" src="https://github.com/user-attachments/assets/98fcdbce-3ae6-48a6-b556-69445171ddc1" />
+
 Projeto prático de segurança ofensiva e defensiva focado em ataques de Força Bruta (Medusa) e mitigação de riscos.
 Este projeto demonstra a capacidade de configurar um ambiente de testes, simular ataques de Força Bruta em serviços comuns (FTP, Web) e, o mais importante, propor medidas de **DevSecOps** para mitigar esses riscos.
 ![Maquinas Ligadas](https://github.com/user-attachments/assets/324a99db-0289-48e3-9cb9-cb9a6ef78da0)
