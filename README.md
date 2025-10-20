@@ -1,4 +1,18 @@
 # auditoria-bruteforce-devsecops.
+
+🚀 Projeto DevSecOps: Auditoria e Mitigação de Ataques de Força Bruta
+Este repositório documenta a execução de um projeto prático de Cibersegurança que simula ataques de Força Bruta (Brute Force) em um ambiente de teste ético e controlado.
+
+O objetivo principal é ir além da exploração, focando na Mitigação de Riscos e na mentalidade DevSecOps (Security as Code).
+
+Foco Estratégico do Projeto:
+Exploração Prática: Utilização do Kali Linux e da ferramenta Medusa para comprometer serviços de rede (FTP) e aplicações web (DVWA), provando a vulnerabilidade de senhas fracas e da ausência de proteção contra automação.
+
+Mitigação Detalhada: Proposição de soluções defensivas, como a implementação de Rate Limiting em firewalls e a adoção obrigatória de Autenticação Multifator (MFA).
+
+Documentação Didática: O projeto serve como um guia passo a passo e totalmente documentado (com comandos e evidências), permitindo que qualquer iniciante replique o laboratório e compreenda o ciclo completo de segurança: Ataque → Documentação → Defesa.
+
+
 <img width="1600" height="896" alt="Capa trabalho da DIO" src="https://github.com/user-attachments/assets/98fcdbce-3ae6-48a6-b556-69445171ddc1" />
 Projeto prático de segurança ofensiva e defensiva focado em ataques de Força Bruta (Medusa) e mitigação de riscos.
 Este projeto demonstra a capacidade de configurar um ambiente de testes, simular ataques de Força Bruta em serviços comuns (FTP, Web) e, o mais importante, propor medidas de **DevSecOps** para mitigar esses riscos.
@@ -9,6 +23,23 @@ Este projeto demonstra a capacidade de configurar um ambiente de testes, simular
 ## ⚙️ 1. Configuração do Laboratório
 
 A parte mais crucial da prática: a configuração do ambiente de testes.
+Excelente ponto! Incluir uma explicação clara sobre a ética e a segurança do laboratório controlado é fundamental. Isso prova que você não apenas sabe usar as ferramentas, mas que entende as responsabilidades legais e éticas de um profissional de segurança.
+
+Essa explicação deve ser colocada logo após a sua Introdução de Alto Impacto, reforçando o aspecto didático e profissional do seu projeto.
+
+🔒 A Ética e Segurança do Laboratório Controlado
+É crucial entender que todas as atividades de varredura, enumeração e ataque de Força Bruta foram executadas em um Laboratório de Testes isolado e seguro.
+
+Por Que a Necessidade de um Ambiente Controlado?
+A utilização de Máquinas Virtuais (VMs) é o pilar da ética em Cibersegurança:
+
+Segurança e Legalidade: Realizar ataques, mesmo que para fins de aprendizado, em redes ou sistemas que você não possui ou para os quais não tem permissão expressa e documentada (autorização por escrito) é ilegal. O ambiente de testes com VMs e a rede Host-Only garante que nenhuma máquina real, sistema corporativo ou rede externa foi afetada.
+
+Isolamento de Riscos: O Metasploitable 2 é um sistema operacional propositalmente vulnerável. Ao mantê-lo isolado do mundo exterior (na rede Host-Only), evitamos que ele se torne um alvo real para atacantes externos, protegendo a sua máquina hospedeira e sua rede doméstica.
+
+Metodologia Profissional: Profissionais de segurança (Penetration Testers) e equipes DevSecOps sempre realizam auditorias e testes de vulnerabilidade em ambientes de Homologação ou Staging (espelhamento do ambiente de produção), nunca diretamente nos sistemas ativos. A configuração Kali + Metasploitable simula essa metodologia profissional.
+
+Conclusão: A escolha das ferramentas (Kali Linux para ataque) e do alvo (Metasploitable 2 para vulnerabilidade), rodando sob o VirtualBox em uma rede isolada, demonstra a aplicação de práticas éticas e o respeito aos princípios de segurança da informação que regem o setor.
 ![Maquinas Ligadas](https://github.com/user-attachments/assets/324a99db-0289-48e3-9cb9-cb9a6ef78da0)
 * **Máquina Atacante:** Kali Linux (VM)
 * **Alvo Vulnerável:** Metasploitable 2 (VM) e DVWA (Damn Vulnerable Web Application).
